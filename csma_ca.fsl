@@ -1,11 +1,3 @@
-# fsl_80211_csma_ca
-FSL implementation of the 802.11 CSMA/CA state path
-
-## Render
-<img src="./wifi_lifecycle.png" height="15em"/>
-
-## Impl
-```fsl
 machine_name      : "CSMA/CA from 802.11";
 machine_author    : "John Haugeland <stonecypher@gmail.com>";
 machine_license   : MIT;
@@ -32,9 +24,3 @@ Start => "Assemble a Frame" => "Channel idle?";
 
 "CTS received?" 'No'  -> "Choose a random\nback-off time";
 "CTS received?" 'Yes' => "Transmit app data";
-```
-
-## Reference
-From [this Wikipedia page](https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png):
-
-![](./original.png)

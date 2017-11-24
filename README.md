@@ -2,7 +2,7 @@
 FSL implementation of the 802.11 CSMA/CA state path
 
 ## Render
-<img src="./wifi_lifecycle.png" height="15em"/>
+<img src="./csma_ca.png" height="15em"/>
 
 ## Impl
 ```fsl

@@ -24,7 +24,7 @@ start_states     : [End];
 
 Start => "Assemble a Frame" => "Channel idle?";
 
-"Channel idle?" 'No' => "Choose a random\nback-off time" -> Wait -> "Channel idle?";
+"Channel idle?" 'No'  -> "Choose a random\nback-off time" -> Wait -> "Channel idle?";
 "Channel idle?" 'Yes' => "Using 802.11\nCTS/RTS exchange?";
 
 "Using 802.11\nCTS/RTS exchange?" 'No'  -> "Transmit app data" => End;
